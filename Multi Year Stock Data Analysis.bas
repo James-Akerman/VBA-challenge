@@ -28,19 +28,19 @@ WS.Cells(1, 12).Value = "Total Stock Volume"
 ' Keep track of the last row in each sheet
 Last_Row = WS.Range("A" & Rows.Count).End(xlUp).Row
 
-' Keep track of the location for each stock ticker in the Summary Table
+' Keep track of the location for each stock ticker symbol in the Summary Table
 Summary_Table_Row = 2
 'Initialise the Total_Stock_Volume
 Total_Stock_Volume = 0
   ' Part 1: Loop through all stocks and create the Summary Table
   For I = 2 To Last_Row
 
-    ' Check if we are still within the same stock ticker, if it is not...
+' Check if we are still within the same stock ticker symbol, if it is not...
     If WS.Cells(I, 1).Value <> WS.Cells(I + 1, 1).Value Then
 
-      ' Set the Stock Ticker
+' Set the Stock Ticker Symbol
       Ticker = WS.Cells(I, 1).Value
-      ' Print the Stock Ticker in the Summary Table
+' Print the Stock Ticker Symbol in the Summary Table
       WS.Range("I" & Summary_Table_Row).Value = Ticker
       
       'Set the Closing Price
@@ -85,7 +85,7 @@ Total_Stock_Volume = 0
       Summary_Table_Row = Summary_Table_Row + 1
     
     Get_Once = False
-    ' If the cell immediately following a row is the same ticker...
+    ' If the cell immediately following a row is the same ticker symbol...
     Else
       If Get_Once = False Then
          ' Only get a Stock's Opening Price once
@@ -119,7 +119,7 @@ Total_Stock_Volume = 0
  WS.Range("Q2").Value = Greatest_Increase
  WS.Range("Q2") = Format(WS.Range("Q2").Value, "Percent")
  
- 'Find the ticker of the stock with the Greatest Increase in the Summary Table
+'Find the ticker symbol of the stock with the Greatest Increase in the Summary Table
  Greatest_Increase_Row_Number = WS.Application.Match(Greatest_Increase, Year_Percent_Price_Range, 0) + 1
  WS.Range("P2").Value = WS.Range("I" & Greatest_Increase_Row_Number)
 
@@ -136,7 +136,8 @@ Total_Stock_Volume = 0
  Greatest_Total_Volume = WS.Application.WorksheetFunction.Max(Total_Stock_Volume_Range)
  WS.Range("Q4").Value = Greatest_Total_Volume
  WS.Range("Q4").NumberFormat = "0.0000E+00"
- 'Find the ticker of the stock with the greatest increase
+
+'Find the total volume of the stock with the greatest increase
  Greatest_Total_Volume_Row_Number = WS.Application.Match(Greatest_Total_Volume, Total_Stock_Volume_Range, 0) + 1
  WS.Range("P4").Value = WS.Range("I" & Greatest_Total_Volume_Row_Number)
 
