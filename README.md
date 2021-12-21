@@ -1,6 +1,6 @@
 # VBA-challenge
 
-* In this homework, I created a Visual Basic for Applications (VBA) script which loops through all the stocks for one year and outputs the following information.
+* In this MONASH UNIVERSITY DATA ANALYTICS BOOT CAMP/TRILOGY EDUCATION SERVICES homework, I created a Visual Basic for Applications (VBA) script which loops through all the stocks for one year and outputs the following information.
   * The ticker symbol.
   * Yearly change from opening price at the beginning of a given year to the closing price at the end of that year.
   * The percent change from opening price at the beginning of a given year to the closing price at the end of that year.
