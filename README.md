@@ -27,7 +27,7 @@ I also calculates which stock showed the greatest increase, decrease, and change
 
 <br>
 
-## Tools/Packages Used
+## Tools/Packages used
 - Excel
 - VBA
 
