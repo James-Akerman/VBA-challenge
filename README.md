@@ -1,4 +1,9 @@
-# VBA-challenge
+# Stock Market Analysis
+
+## Tools/Packages Used
+
+## How to use
+
 
 * In this Monash University Data Analytics Boot Camp/Trilogy Education Services homework, I created a Visual Basic for Applications (VBA) script which loops through all the stocks for one year and outputs the following information.
 
