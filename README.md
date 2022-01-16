@@ -1,4 +1,6 @@
 # Stock Market Analysis
+
+## Overview of the Project
 A VBA script which analyses three years worth of stock data from 2014 to 2016. 
 It then calculates the following for each stock
 - the yearly change from opening price at the beginning of a given year to the closing price at the end of that year.
