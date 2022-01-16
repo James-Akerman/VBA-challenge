@@ -8,16 +8,19 @@ It then calculates the following for each stock
 I also calculates which stock showed the greatest increase, decrease, and change in trading volume for that year.
 
 **2014**
+
 ![2014 Multi Year Stock Data](images/2014-Multi-Year-Stock-Data.PNG)
 
 <br>
 
 **2015**
+
 ![2015 Multi Year Stock Data](images/2015-Multi-Year-Stock-Data.PNG)
 
 <br>
 
 **2016**
+
 ![2016 Multi Year Stock Data](images/2016-Multi-Year-Stock-Data.PNG)
 
 <br>
